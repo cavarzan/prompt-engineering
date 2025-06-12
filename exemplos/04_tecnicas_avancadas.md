@@ -8,13 +8,11 @@
 - Em entrevistas técnicas ou consultorias
 - Para obter respostas mais contextualizadas
 
-```markdown
-Você é um arquiteto de software com 20 anos de experiência.
-Sua especialidade é em sistemas distribuídos e microserviços.
-Responda como se estivesse em uma entrevista técnica.
+Exemplo:
+
+Você é um arquiteto de software com 20 anos de experiência. Sua especialidade é em sistemas distribuídos e microserviços. Responda como se estivesse em uma entrevista técnica.
 
 Pergunta: Como você projetaria um sistema de registro de CCBs que precisa escalar para milhões de clientes?
-```
 
 ## 2. Format Prompting
 **Descrição:** Especifica o formato exato em que a resposta deve ser apresentada.
@@ -24,7 +22,8 @@ Pergunta: Como você projetaria um sistema de registro de CCBs que precisa escal
 - Para limitar o tamanho ou estilo da resposta
 - Em relatórios ou documentação padronizada
 
-```markdown
+Exemplo:
+
 Analise o seguinte código e responda no formato JSON:
 
 Código:
@@ -34,16 +33,19 @@ def calcular_media(numeros):
 ```
 
 Responda no formato:
+
+```json
 {
-    "complexidade": "O(1)",
-    "tipo": "função",
-    "parametros": ["lista de números"],
-    "retorno": "número",
-    "observacoes": []
+  "complexidade": "O(1)",
+  "tipo": "função",
+  "parametros": ["lista de números"],
+  "retorno": "número",
+  "observacoes": []
 }
 ```
 
-```markdown
+Outro exemplo:
+
 Analise o texto abaixo e responda em tópicos:
 
 Texto: "O novo sistema de pagamentos reduziu o tempo de processamento em 40%, aumentou a satisfação dos clientes e diminuiu os custos operacionais."
@@ -52,10 +54,10 @@ Responda em tópicos:
 - Pontos positivos
 - Impactos
 - Recomendações
-```
 
-```markdown
-Analise o texto abaixo e responda em parágrafos concisos:
+Outro exemplo:
+
+Analise o texto abaixo e responda em 3 parágrafos concisos:
 
 Texto: "A empresa implementou um novo sistema de gestão que automatizou processos, reduziu erros e melhorou a produtividade."
 
@@ -63,15 +65,14 @@ Responda em 3 parágrafos:
 1. Contexto
 2. Mudanças
 3. Resultados
-```
 
-```markdown
+Outro exemplo:
+
 Analise o texto abaixo e responda em no máximo 100 caracteres:
 
 Texto: "O projeto de inovação trouxe resultados positivos, mas alguns desafios precisam ser superados para garantir o sucesso a longo prazo."
 
 Resposta (máx. 100 caracteres):
-```
 
 ## 3. Multi-step Prompting
 **Descrição:** Divide um problema complexo em etapas sequenciais para resolução passo a passo.
@@ -81,23 +82,21 @@ Resposta (máx. 100 caracteres):
 - Em planejamento e análise de requisitos
 - Para documentar processos de decisão
 
-```markdown
+Exemplo:
+
 Vamos resolver este problema em etapas:
 
 1. Primeiro, identifique os requisitos:
    - Sistema de autenticação
    - Armazenamento de dados
    - Interface de usuário
-
 2. Depois, sugira tecnologias para cada requisito:
    - Autenticação: [tecnologias]
    - Armazenamento: [tecnologias]
    - Interface: [tecnologias]
-
 3. Por fim, explique como integrar estas tecnologias.
 
 Problema: Desenvolver um sistema de gerenciamento de tarefas.
-```
 
 ## 4. Self-Consistency
 **Descrição:** Solicita múltiplas soluções para o mesmo problema e compara os resultados.
@@ -107,7 +106,8 @@ Problema: Desenvolver um sistema de gerenciamento de tarefas.
 - Para documentar alternativas
 - Em decisões arquiteturais
 
-```markdown
+Exemplo:
+
 Resolva o problema de três maneiras diferentes e depois compare as soluções:
 
 Problema: Implementar um sistema de cache para uma API REST.
@@ -126,7 +126,6 @@ Comparação das soluções:
 2. Complexidade
 3. Manutenção
 4. Custo
-```
 
 ## 5. Recursive Prompting
 **Descrição:** Decompõe um problema em subproblemas menores e mais gerenciáveis.
@@ -136,7 +135,8 @@ Comparação das soluções:
 - Em arquitetura de sistemas
 - Para documentação técnica
 
-```markdown
+Exemplo:
+
 Vamos decompor este problema em subproblemas:
 
 Problema Principal: Desenvolver um sistema de recomendação de produtos.
@@ -157,7 +157,6 @@ Subproblema 3: Interface
 - Como melhorar continuamente?
 
 Para cada subproblema, forneça uma solução detalhada.
-```
 
 ## 6. Contrastive Prompting
 **Descrição:** Compara e contrasta diferentes abordagens ou soluções.
@@ -167,7 +166,8 @@ Para cada subproblema, forneça uma solução detalhada.
 - Para documentar trade-offs
 - Em avaliação de tecnologias
 
-```markdown
+Exemplo:
+
 Compare e contraste estas duas abordagens:
 
 Abordagem 1: Monolito
@@ -181,7 +181,6 @@ Abordagem 2: Microserviços
 - Casos de uso ideais
 
 Conclusão: Em quais cenários cada abordagem é mais adequada?
-```
 
 ## 7. Chain-of-Thought com Validação
 **Descrição:** Solicita raciocínio passo a passo com validação em cada etapa.
@@ -191,13 +190,14 @@ Conclusão: Em quais cenários cada abordagem é mais adequada?
 - Em análise de performance
 - Para debugging e otimização
 
-```markdown
+Exemplo:
+
 Resolva o problema e valide cada passo:
 
 Problema: Otimizar uma query SQL que está lenta.
 
 Passo 1: Análise da Query
-- Query atual: 
+Query atual:
 ```sql
 SELECT p.nome, c.valor, c.data
 FROM pedidos p
@@ -219,7 +219,6 @@ Passo 3: Implementação
 - Código otimizado: [query]
 - Métricas de melhoria: [números]
 - Validação final: [como confirmar a melhoria]
-```
 
 ## 8. Chain-of-Thought Interativo
 **Descrição:** Permite interação passo a passo com o modelo, aguardando confirmação.
@@ -229,10 +228,12 @@ Passo 3: Implementação
 - Em análise de problemas complexos
 - Para tutoriais interativos
 
-```markdown
+Exemplo:
+
 Vamos resolver este problema passo a passo. Após cada passo, aguarde minha confirmação antes de prosseguir.
 
-Problema: Em uma sala de aula, há 24 alunos. O professor precisa formar grupos de 4 alunos para um trabalho. Quantos grupos serão formados? Mostre seu raciocínio.
+```markdown
+Problema: Em uma sala de aula, há 24 alunos. O professor precisa formar grupos de 4 alunos para um trabalho. Quantos grupos serão formados?
 ```
 
 ## 9. Chain-of-Thought Automático
@@ -243,58 +244,22 @@ Problema: Em uma sala de aula, há 24 alunos. O professor precisa formar grupos 
 - Para explicações detalhadas
 - Em relatórios técnicos
 
-```markdown
+Exemplo:
+
 Resolva o seguinte problema mostrando seu raciocínio passo a passo:
 
 Problema: Uma loja vende camisetas por R$ 45,00 cada. Se um cliente comprar 3 camisetas, receberá 10% de desconto no valor total. Quanto o cliente pagará? Mostre seu raciocínio.
-```
 
-**Resposta esperada:**
+Resposta esperada:
 
-```
 1. Primeiro, calculamos o valor total sem desconto:
    3 camisetas × R$ 45,00 = R$ 135,00
-
 2. Depois, calculamos o desconto de 10%:
    R$ 135,00 × 0,10 = R$ 13,50
-
 3. Por fim, subtraímos o desconto do valor total:
    R$ 135,00 - R$ 13,50 = R$ 121,50
 
 Portanto, o cliente pagará R$ 121,50.
-```
-
-## 10. Format Prompting (Formatação de Resposta)
-
-```markdown
-Analise o texto abaixo e responda em tópicos:
-
-Texto: "O novo sistema de pagamentos reduziu o tempo de processamento em 40%, aumentou a satisfação dos clientes e diminuiu os custos operacionais."
-
-Responda em tópicos:
-- Pontos positivos
-- Impactos
-- Recomendações
-```
-
-```markdown
-Analise o texto abaixo e responda em parágrafos concisos:
-
-Texto: "A empresa implementou um novo sistema de gestão que automatizou processos, reduziu erros e melhorou a produtividade."
-
-Responda em 3 parágrafos:
-1. Contexto
-2. Mudanças
-3. Resultados
-```
-
-```markdown
-Analise o texto abaixo e responda em no máximo 100 caracteres:
-
-Texto: "O projeto de inovação trouxe resultados positivos, mas alguns desafios precisam ser superados para garantir o sucesso a longo prazo."
-
-Resposta (máx. 100 caracteres):
-```
 
 ---
 
