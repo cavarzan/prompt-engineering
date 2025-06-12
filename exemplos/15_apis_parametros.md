@@ -8,6 +8,15 @@ Um token é uma unidade de texto usada pelo modelo. Palavras podem ser divididas
 
 Isso afeta diretamente o custo e o limite de cada chamada à API.
 
+
+| Tokens | Palavras (estimativa) | Caracteres (estimativa) |
+|--------|------------------------|---------------------------|
+| 500    | ~375                   | ~1.500 a 2.000            |
+| 1000   | ~750                   | ~3.000 a 4.000            |
+| 1500   | ~1.125                 | ~4.500 a 6.000            |
+| 4000   | ~3.000                 | ~12.000 a 16.000          |
+
+
 ## 2. Fórmula do Custo
 
 Custo Total = (Tokens de Entrada x Preço por Token de Entrada) + (Tokens de Saída x Preço por Token de Saída)
