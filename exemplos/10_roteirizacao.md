@@ -10,4 +10,4 @@ Estruture o roteiro em 4 partes: Gancho, O Problema, A Solução e Chamada para 
 
 ---
 
-[Anterior: Chain-of-Thought Interativo](11_chain_of_thought_interativo.md) | [Próximo: Chain-of-Thought Automático](12_chain_of_thought_automatico.md) | [Voltar ao Índice](../README.md) 
+[Anterior: Contrastive Prompting](09_contrastive.md) | [Próximo: Chain-of-Thought Interativo](11_chain_of_thought_interativo.md) | [Voltar ao Índice](../README.md) 
