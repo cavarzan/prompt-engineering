@@ -117,6 +117,21 @@ Traduza o seguinte texto técnico para inglês, mantendo os termos técnicos:
    - Para exemplos: ---
    - Para seções: ##
 
+   Exemplos:
+   - Delimitador de código:
+     ```python
+     def soma(a, b):
+         return a + b
+     ```
+   - Delimitador de exemplo:
+     ---
+     Exemplo de entrada: "O produto é excelente."
+     Exemplo de saída: "Positivo"
+     ---
+   - Delimitador de seção:
+     ## Nova Seção
+     (Utilize para separar grandes blocos de conteúdo ou tópicos no prompt)
+
 2. **Especifique o Formato**
    - JSON
    - Markdown

@@ -20,6 +20,35 @@
    - Controla tamanho da resposta
    - Ajuste baseado na necessidade
    - Considere o custo
+   
+   Exemplos:
+   - max_tokens=50: Resposta curta, ideal para comandos simples ou respostas objetivas.
+   - max_tokens=200: Resposta média, adequada para explicações rápidas ou pequenos resumos.
+   - max_tokens=1000: Resposta longa, útil para análises detalhadas, geração de código ou textos extensos.
+
+4. **Diversidade (`top_p`)**
+   - Controla a variedade de palavras e ideias na resposta
+   - Valores altos (ex: 1.0) permitem respostas mais criativas e variadas
+   - Valores baixos (ex: 0.1) tornam a resposta mais restrita e previsível
+   - Exemplo:
+     - top_p=1.0: "Conte uma história sobre um dragão." → Pode gerar histórias muito diferentes a cada execução
+     - top_p=0.2: "Conte uma história sobre um dragão." → Respostas mais padronizadas, com pouca variação
+
+5. **Repetição (`frequency_penalty`)**
+   - Penaliza a repetição de palavras ou frases já usadas
+   - Valores altos (ex: 1.0) reduzem repetições
+   - Valores baixos (ex: 0.0) permitem repetições
+   - Exemplo:
+     - frequency_penalty=0.0: "Fale sobre maçãs." → Pode repetir "maçã" várias vezes
+     - frequency_penalty=1.0: "Fale sobre maçãs." → Evita repetir "maçã", busca sinônimos ou muda o foco
+
+6. **Novos tópicos (`presence_penalty`)**
+   - Incentiva o modelo a introduzir assuntos ou termos ainda não usados
+   - Valores altos (ex: 1.0) aumentam a chance de explorar novas ideias
+   - Valores baixos (ex: 0.0) mantêm o foco no mesmo tema
+   - Exemplo:
+     - presence_penalty=0.0: "Fale sobre IA e aprendizado de máquina." → Pode focar só em IA
+     - presence_penalty=1.0: "Fale sobre IA e aprendizado de máquina." → Tende a mencionar outros conceitos relacionados, como robótica, automação, etc.
 
 ## 2. Parâmetros Importantes
 
@@ -29,7 +58,7 @@
     "temperature": 0.7,        # Criatividade (0-1)
     "max_tokens": 1000,        # Tamanho máximo
     "top_p": 0.9,             # Diversidade
-    "frequency_penalty": 0.0,  # Evita repetições
+    "frequency_penalty": 0.0,  # Permite repetições
     "presence_penalty": 0.0    # Incentiva novos tópicos
 }
 ```
@@ -42,7 +71,7 @@
     "temperature": 0.3,        # Mais preciso
     "max_tokens": 500,         # Respostas concisas
     "top_p": 0.9,             # Termos técnicos
-    "frequency_penalty": 0.1,  # Pequena redução de repetições
+    "frequency_penalty": 0.1,  # Reduz levemente repetições
     "presence_penalty": 0.1    # Pequena diversidade
 }
 ```
@@ -53,7 +82,7 @@
     "temperature": 0.8,        # Mais criativo
     "max_tokens": 2000,        # Espaço para desenvolvimento
     "top_p": 1.0,             # Vocabulário diverso
-    "frequency_penalty": 0.5,  # Evita repetições
+    "frequency_penalty": 0.5,  # Reduz repetições
     "presence_penalty": 0.3    # Incentiva diversidade
 }
 ```
@@ -64,7 +93,7 @@
     "temperature": 0.2,        # Muito preciso
     "max_tokens": 1000,        # Espaço para funções
     "top_p": 0.95,            # Termos técnicos comuns
-    "frequency_penalty": 0.0,  # Permite repetição de termos técnicos
+    "frequency_penalty": 0.0,  # Permite repetições
     "presence_penalty": 0.0    # Foca em um aspecto
 }
 ```
