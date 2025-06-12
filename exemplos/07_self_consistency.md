@@ -1,33 +1,19 @@
 # Self-Consistency
 
-**Descrição:** Solicita múltiplas soluções para o mesmo problema e compara os resultados.
+**Descrição:** Técnica proposta por Wang et al. (2022) para substituir a decodificação gananciosa em prompts do tipo Chain-of-Thought (CoT). Consiste em gerar múltiplos caminhos de raciocínio para a mesma questão e selecionar a resposta mais frequente/consistente entre as gerações. Isso aumenta o desempenho em tarefas de raciocínio aritmético e de bom senso.
+
+Referência: Wang, X., et al. (2022). "Self-Consistency Improves Chain of Thought Reasoning in Language Models." https://arxiv.org/abs/2203.11171
 
 **Quando usar:**
-- Para validar diferentes abordagens
-- Em análise de trade-offs
-- Para documentar alternativas
-- Em decisões arquiteturais
+- Para tarefas de raciocínio aritmético ou lógico
+- Quando a robustez da resposta é crítica
+- Para reduzir vieses de geração única
 
 **Exemplo:**
 
-Resolva o problema de três maneiras diferentes e depois compare as soluções:
+Resolva o problema abaixo utilizando raciocínio passo a passo. Gere pelo menos 5 cadeias de pensamento diferentes e, ao final, selecione a resposta mais frequente entre elas.
 
-Problema: Implementar um sistema de cache para uma API REST.
-
-Solução 1 (usando Redis):
-[implementação]
-
-Solução 2 (usando Memcached):
-[implementação]
-
-Solução 3 (usando cache em memória):
-[implementação]
-
-Comparação das soluções:
-1. Performance
-2. Complexidade
-3. Manutenção
-4. Custo 
+Problema: Se João tem o dobro da idade de Maria e, juntos, eles somam 36 anos, qual a idade de cada um?
 
 ---
 
