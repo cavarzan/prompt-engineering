@@ -6,9 +6,18 @@
 2. [Zero-Shot Prompting](exemplos/01_zero_shot.md)
 3. [Few-Shot Prompting](exemplos/02_few_shot.md)
 4. [Chain-of-Thought Prompting](exemplos/03_chain_of_thought.md)
-5. [Técnicas Avançadas](exemplos/04_tecnicas_avancadas.md)
-6. [Boas Práticas](exemplos/05_boas_praticas.md)
-7. [APIs e Parâmetros](exemplos/06_apis_parametros.md)
+5. [Role Prompting](exemplos/04_role_prompt.md)
+6. [Format Prompting](exemplos/05_format.md)
+7. [Multi-step Prompting](exemplos/06_multi_step.md)
+8. [Self-Consistency](exemplos/07_self_consistency.md)
+9. [Recursive Prompting](exemplos/08_recursive.md)
+10. [Contrastive Prompting](exemplos/09_contrastive.md)
+11. [Roteirização](exemplos/10_roteirizacao.md)
+12. [Chain-of-Thought Interativo](exemplos/11_chain_of_thought_interativo.md)
+13. [Chain-of-Thought Automático](exemplos/12_chain_of_thought_automatico.md)
+14. [Refinamento Iterativo](exemplos/13_refinamento_iterativo.md)
+15. [Boas Práticas](exemplos/14_boas_praticas.md)
+16. [APIs e Parâmetros](exemplos/15_apis_parametros.md)
 
 ## Estrutura do Treinamento
 
@@ -21,7 +30,16 @@
 - Zero-Shot
 - Few-Shot
 - Chain-of-Thought
-- Técnicas Avançadas
+- Role Prompting
+- Format Prompting
+- Multi-step Prompting
+- Self-Consistency
+- Recursive Prompting
+- Contrastive Prompting
+- Roteirização
+- Chain-of-Thought Interativo
+- Chain-of-Thought Automático
+- Refinamento Iterativo
 
 ### 3. Boas Práticas (10 min)
 - Clareza e Especificidade
