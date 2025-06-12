@@ -153,6 +153,30 @@ Traduza o seguinte texto técnico para inglês, mantendo os termos técnicos:
    - Confirme se os parâmetros estão corretos
    - Teste o prompt antes de usar em produção 
 
+## 5. Anti-Padrões de Prompting (O que NÃO fazer)
+
+**Prompt "Mãe Dináh":** Esperar que a IA adivinhe o contexto que está apenas na sua cabeça.
+
+❌ Exemplo:
+"Me ajude com aquele problema."
+
+**Prompt "Frankenstein":** Juntar várias perguntas e tarefas não relacionadas em um único prompt.
+
+❌ Exemplo:
+"Analise este código, otimize, documente e crie testes."
+
+**Prompt "Ambíguo":** Usar palavras com duplo sentido sem esclarecer.
+
+❌ Exemplo:
+"Fale sobre o 'caixa' da empresa."
+
+**Prompt "Sem Limites":** Pedir uma análise sem definir escopo ou formato.
+
+❌ Exemplo:
+"Faça uma análise completa do nosso app."
+
+**Dica:** Dê nomes aos anti-padrões para facilitar a identificação e evite-os sempre que possível.
+
 ---
 
 [Anterior: Refinamento Iterativo](13_refinamento_iterativo.md) | [Próximo: APIs e Parâmetros](15_apis_parametros.md) | [Voltar ao Índice](../README.md) 

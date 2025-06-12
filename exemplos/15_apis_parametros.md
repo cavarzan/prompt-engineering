@@ -1,6 +1,28 @@
 # APIs e Parâmetros
 
-## 1. Configurações de Modelos
+## 1. O que é um Token? (E por que não é uma palavra)
+
+Um token é uma unidade de texto usada pelo modelo. Palavras podem ser divididas em vários tokens. Por exemplo:
+- "prompt" = 2 tokens ("pro" + "mpt")
+- "engineering" = 3 tokens ("en" + "gin" + "eering")
+
+Isso afeta diretamente o custo e o limite de cada chamada à API.
+
+## 2. Fórmula do Custo
+
+Custo Total = (Tokens de Entrada x Preço por Token de Entrada) + (Tokens de Saída x Preço por Token de Saída)
+
+Exemplo:
+- Prompt de entrada: 50 tokens
+- Resposta gerada: 100 tokens
+- Preço por token: R$ 0,0001
+- Custo: (50 x 0,0001) + (100 x 0,0001) = R$ 0,015
+
+## 3. Impacto do Prompt no Custo
+
+Um system_prompt longo e mal otimizado aumenta o custo de todas as chamadas, mesmo que a pergunta do usuário seja curta. Sempre revise e otimize prompts para evitar desperdício.
+
+## 4. Configurações de Modelos
 
 **Descrição:** Configurações básicas que afetam o comportamento do modelo.
 **Quando usar:** Ao fazer chamadas à API, para controlar a saída.
@@ -50,20 +72,7 @@
      - presence_penalty=0.0: "Fale sobre IA e aprendizado de máquina." → Pode focar só em IA
      - presence_penalty=1.0: "Fale sobre IA e aprendizado de máquina." → Tende a mencionar outros conceitos relacionados, como robótica, automação, etc.
 
-## 2. Parâmetros Importantes
-
-### Controle de Resposta:
-```python
-{
-    "temperature": 0.7,        # Criatividade (0-1)
-    "max_tokens": 1000,        # Tamanho máximo
-    "top_p": 0.9,             # Diversidade
-    "frequency_penalty": 0.0,  # Permite repetições
-    "presence_penalty": 0.0    # Incentiva novos tópicos
-}
-```
-
-### Exemplos de Configurações:
+## 5. Exemplos de Configurações:
 
 1. **Respostas Técnicas**
 ```python
@@ -98,7 +107,7 @@
 }
 ```
 
-## 3. Exemplos de Uso
+## 6. Exemplos de Uso
 
 ### 1. Chamada Básica
 ```python
@@ -145,7 +154,7 @@ response = client.chat.completions.create(
 )
 ```
 
-## 4. Dicas de Uso
+## 7. Dicas de Uso
 
 1. **Ajuste de Parâmetros**
    - Comece com valores padrão
