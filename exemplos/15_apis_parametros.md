@@ -167,4 +167,4 @@ response = client.chat.completions.create(
 
 ---
 
-[Anterior: Boas Práticas](05_boas_praticas.md) | [Voltar ao Índice](../README.md) 
+[Anterior: Boas Práticas](13_boas_praticas.md) | [Voltar ao Índice](../README.md) 

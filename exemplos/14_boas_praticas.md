@@ -155,4 +155,4 @@ Traduza o seguinte texto técnico para inglês, mantendo os termos técnicos:
 
 ---
 
-[Anterior: Técnicas Avançadas](04_tecnicas_avancadas.md) | [Próximo: APIs e Parâmetros](06_apis_parametros.md) | [Voltar ao Índice](../README.md) 
+[Anterior: Refinamento Iterativo](13_refinamento_iterativo.md) | [Próximo: APIs e Parâmetros](15_apis_parametros.md) | [Voltar ao Índice](../README.md) 

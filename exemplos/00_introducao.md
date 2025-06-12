@@ -88,4 +88,9 @@
 
 ---
 
-[Próximo: Zero-Shot Prompting](01_zero_shot.md) | [Voltar ao Índice](../README.md) 
+## Referências
+- [Prompt Engineering Guide (em português)](https://www.promptingguide.ai/pt) 
+
+
+[Próximo: Zero-Shot Prompting](01_zero_shot.md) | [Voltar ao Índice](../README.md)
+
